@@ -8,9 +8,7 @@ with nothing in
 (https://github.com/stormasm/ui-grid-examples/tree/master/top/docs/partials/tutorial)
 except a couple relevant examples.
 
-Note everything has been removed from here.
-
-The comparison is everything that is initially
+Note everything has been removed with a comparison
 [here]
 (https://github.com/stormasm/ui-grid.info/tree/master/docs/partials)
 

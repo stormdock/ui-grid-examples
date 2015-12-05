@@ -4,22 +4,19 @@ app.controller('MainCtrl', ['$scope', function ($scope) {
 
   $scope.myData = [
     {
-        "firstName": "Cox",
-        "lastName": "Carney",
-        "company": "Enormo",
-        "employed": true
+        "username": "iris",
+        "password": "x1",
+        "email": "iris@me.com"
     },
     {
-        "firstName": "Lorraine",
-        "lastName": "Wise",
-        "company": "Comveyer",
-        "employed": false
+        "username": "hb",
+        "password": "x2",
+        "email": "hb@she.com"
     },
     {
-        "firstName": "Nancy",
-        "lastName": "Waters",
-        "company": "Fuelton",
-        "employed": false
+        "username": "mike",
+        "password": "x3",
+        "email": "mike@he.com"
     }
 ];
 }]);

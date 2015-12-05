@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ngTouch', 'ui.grid']);
+var app = angular.module('app', ['ui.grid']);
 
 app.controller('MainCtrl', ['$scope', '$http', function ($scope, $http) {
 
@@ -9,7 +9,7 @@ app.controller('MainCtrl', ['$scope', '$http', function ($scope, $http) {
       $scope.myData = data;
     });
 
-// This is another way to get the data statically    
+// This is another way to get the data statically
 /*
   $scope.myData = [
     {

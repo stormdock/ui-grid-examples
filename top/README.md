@@ -34,3 +34,9 @@ In **docs/index.html**
 <small><a href="" data-popover data-content="Advertising covers the costs of running this site, and funds extra support and development.">Why does this site have ads?</a></small>
 </div>
 ```
+
+##### Bringing up the Tutorial
+
+To bring up this application you must start out in this directory,
+if you start out one level up and try navigating down to here it
+**Does Not Work**.

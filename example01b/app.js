@@ -4,12 +4,7 @@ app.controller('MainCtrl', ['$scope', '$http', '$q', '$interval', function ($sco
   $scope.gridOptions = {};
 
   $scope.gridOptions.columnDefs = [
-    { name: 'id', enableCellEdit: false },
-    { name: 'name', displayName: 'Name (editable)' },
-    { name: 'gender' },
-    { name: 'age', displayName: 'Age' , type: 'number'},
-    { name: 'registered', displayName: 'Registered' , type: 'date', cellFilter: 'date:"yyyy-MM-dd"'},
-    { name: 'isActive', displayName: 'Active', type: 'boolean'}
+    { name: 'name', displayName: 'Name' }
   ];
 
   $scope.saveRow = function( rowEntity ) {

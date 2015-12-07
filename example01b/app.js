@@ -4,7 +4,12 @@ app.controller('MainCtrl', ['$scope', '$http', '$q', '$interval', function ($sco
   $scope.gridOptions = {};
 
   $scope.gridOptions.columnDefs = [
-    { name: 'name', displayName: 'Name (editable)' }
+    { name: 'id', enableCellEdit: false },
+    { name: 'name', displayName: 'Name (editable)' },
+    { name: 'gender' },
+    { name: 'age', displayName: 'Age' , type: 'number'},
+    { name: 'registered', displayName: 'Registered' , type: 'date', cellFilter: 'date:"yyyy-MM-dd"'},
+    { name: 'isActive', displayName: 'Active', type: 'boolean'}
   ];
 
   $scope.saveRow = function( rowEntity ) {
@@ -28,6 +33,6 @@ app.controller('MainCtrl', ['$scope', '$http', '$q', '$interval', function ($sco
 
   $http.get(url)
     .success(function(data) {
-      $scope.myData = data;
+      $scope.gridOptions.data = data;
     });
 }]);

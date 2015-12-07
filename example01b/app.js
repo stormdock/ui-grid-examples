@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ui.grid']);
+var app = angular.module('app', ['ui.grid', 'ui.grid.edit', 'ui.grid.rowEdit', 'ui.grid.cellNav']);
 
 app.controller('MainCtrl', ['$scope', '$http', function ($scope, $http) {
 
@@ -8,25 +8,4 @@ app.controller('MainCtrl', ['$scope', '$http', function ($scope, $http) {
     .success(function(data) {
       $scope.myData = data;
     });
-
-// This is another way to get the data statically
-/*
-  $scope.myData = [
-    {
-        "username": "iris",
-        "password": "x1",
-        "email": "iris@me.com"
-    },
-    {
-        "username": "hb",
-        "password": "x2",
-        "email": "hb@she.com"
-    },
-    {
-        "username": "mike",
-        "password": "x3",
-        "email": "mike@he.com"
-    }
-  ];
-*/
 }]);

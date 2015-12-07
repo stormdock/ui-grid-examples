@@ -40,3 +40,7 @@ In **docs/index.html**
 To bring up this application you must start out in this directory,
 if you start out one level up and try navigating down to here it
 **Does Not Work**.
+
+To see what tutorials are implemented go
+[here]
+(./docs/partials/tutorial)

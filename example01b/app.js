@@ -12,6 +12,8 @@ app.controller('MainCtrl', ['$scope', '$http', '$q', '$interval', function ($sco
     var promise = $q.defer();
     $scope.gridApi.rowEdit.setSavePromise( rowEntity, promise.promise );
 
+    console.log(rowEntity);
+
     // fake a delay of 3 seconds whilst the save occurs, return error if gender is "male"
     $interval( function() {
       promise.resolve();

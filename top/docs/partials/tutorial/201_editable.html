@@ -181,7 +181,7 @@ $scope.gridOptions.columnDefs = [
             });
           };
 
-    $http.get('/data/500_complex.json')
+    $http.get('/data/10_complex.json')
       .success(function(data) {
         for(i = 0; i < data.length; i++){
           data[i].registered = new Date(data[i].registered);
@@ -213,7 +213,7 @@ $scope.gridOptions.columnDefs = [
       }
     };
   })
-  
+
   .filter('mapStatus', function() {
     var genderHash = {
       1: 'Bachelor',

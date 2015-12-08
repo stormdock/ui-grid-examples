@@ -4,7 +4,10 @@ app.controller('MainCtrl', ['$scope', '$http', '$q', '$interval', function ($sco
   $scope.gridOptions = {};
 
   $scope.gridOptions.columnDefs = [
-    { name: 'username', displayName: 'Name' }
+    { name: 'username', displayName: 'Name'},
+    { name: 'email', displayName: 'Email'},
+    { name: 'password', displayName: 'Password'},
+    { name: '_id', displayName: 'Id'}
   ];
 
   $scope.saveRow = function( rowEntity ) {

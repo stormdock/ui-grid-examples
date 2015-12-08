@@ -4,7 +4,7 @@ app.controller('MainCtrl', ['$scope', '$http', '$q', '$interval', function ($sco
   $scope.gridOptions = {};
 
   $scope.gridOptions.columnDefs = [
-    { name: 'name', displayName: 'Name' }
+    { name: 'username', displayName: 'Name' }
   ];
 
   $scope.saveRow = function( rowEntity ) {
